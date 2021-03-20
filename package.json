@@ -5,6 +5,7 @@
     "readline-sync": "^1.4.10"
   },
   "scripts": {
-    "doc-gen": "node -e 'require(\"./doc-gen.js\").docGen()'"
+    "doc-gen-upload": "node -e 'require(\"./lib/doc-gen.js\").docGenAndUpload()'",
+    "doc-gen-csv": "node -e 'require(\"./lib/doc-gen.js\").docGenToCsv()'"
   }
 }

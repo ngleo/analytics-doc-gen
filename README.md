@@ -2,9 +2,10 @@
 ---
 Parse all files in a directory and document anayltics events in a Google Sheet.
 
-Annotate events in comments of any format. Include tags below, @Analytics is required.
+Annotate events using comments in below format. Include tags below, 
+@Analytics is required, others are optional.
 ```java
-/// @Analytics [event name]
+/// @Analytics_event [event name]
 /// @Category [category]
 /// @Description [description]
 ``` 
@@ -16,4 +17,8 @@ npm install
 To start
 ```
 npm run doc-gen
+```
+To export a csv
+```
+npm run doc-gen-csv
 ```

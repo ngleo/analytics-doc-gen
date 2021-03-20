@@ -43,7 +43,7 @@ async function getNewToken(oAuth2Client) {
   console.log("Authorize this app by visiting this url:", authUrl);
   const code = rl.question("Enter the code from that page here: ");
 
-  /// @Analytics event1
+  /// @Analytics_event event1
   /// @Category category 1
   /// @Description description 1
   try {
@@ -58,15 +58,15 @@ async function getNewToken(oAuth2Client) {
       return oAuth2Client;
     });
 
-    /// @Analytics event2
+    /// @Analytics_event event2
   /// @Category category 2 
   /// @Description long long long long long long long 
   /// long long long description 2
-    /// @Analytics event 3
+    /// @Analytics_event event 3
   /// @Category category 3
 
-      /// @Analytics event 4
-        /// @Analytics event 5
+      /// @Analytics_event event 4
+        /// @Analytics_event event 5
 
     // const token = await oAuth2Client.getToken(code);
     // console.log(token)
@@ -83,6 +83,6 @@ async function getNewToken(oAuth2Client) {
 }
 
 exports.authorize = authorize;
-  /// @Analytics event 6
+  /// @Analytics_event event 6
   /// @Category category 6
   /// @Description description 6

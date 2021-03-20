@@ -8,4 +8,6 @@ Add files below to configure:
 spread sheet id: "xxxxx"
 # Absolute path of root directory to parse
 root directory: "xxxxx"
+# Csv output path
+csv output path: "xxxxx"
 ```
