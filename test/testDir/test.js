@@ -5,10 +5,8 @@ const {google} = require("googleapis");
 const SCOPES = ["https://www.googleapis.com/auth/spreadsheets"];
 const TOKEN_PATH = "config/token.json";
 const CREDS_PATH = "config/credentials.json"
-
 /**
- * Create an OAuth2 client with creds from CREDS_PATH. Generates 
- * or renew token and stores at TOKEN_PATH.
+ * Test sample
  */
 async function authorize() {
   var credentials;
@@ -45,6 +43,9 @@ async function getNewToken(oAuth2Client) {
   console.log("Authorize this app by visiting this url:", authUrl);
   const code = rl.question("Enter the code from that page here: ");
 
+  /// @Analytics event1
+  /// @Category category 1
+  /// @Description description 1
   try {
     oAuth2Client.getToken(code, (err, token) => {
       if (err) return console.error("Error while trying to retrieve access token", err);
@@ -56,6 +57,16 @@ async function getNewToken(oAuth2Client) {
       });
       return oAuth2Client;
     });
+
+    /// @Analytics event2
+  /// @Category category 2 
+  /// @Description long long long long long long long 
+  /// long long long description 2
+    /// @Analytics event 3
+  /// @Category category 3
+
+      /// @Analytics event 4
+        /// @Analytics event 5
 
     // const token = await oAuth2Client.getToken(code);
     // console.log(token)
@@ -72,3 +83,6 @@ async function getNewToken(oAuth2Client) {
 }
 
 exports.authorize = authorize;
+  /// @Analytics event 6
+  /// @Category category 6
+  /// @Description description 6

@@ -1,3 +1,7 @@
+/**
+ * Test sample
+ */
+
 const fs = require("fs"); 
 const rl = require("readline-sync");
 const {google} = require("googleapis");
@@ -18,7 +22,8 @@ async function authorize() {
   } catch (e) {
     return console.log("Error loading client secret file:", e);
   }
-
+  /// @Analytics event 7
+  /// @Category category 7
   const {client_secret, client_id, redirect_uris} = credentials.installed;
   const oAuth2Client = new google.auth.OAuth2(
       client_id, client_secret, redirect_uris[0]);
@@ -37,6 +42,10 @@ async function authorize() {
  * Get and store new token after prompting for user authorization.
  * @param {google.auth.OAuth2} oAuth2Client The OAuth2 client to get token for.
  */
+/// @Analytics event 8
+/// @Category category 8
+/// @Description long long long long long long long 
+/// long long long description 8
 async function getNewToken(oAuth2Client) {
   const authUrl = oAuth2Client.generateAuthUrl({
     access_type: "offline",
@@ -66,9 +75,11 @@ async function getNewToken(oAuth2Client) {
     // console.log("Token stored to", TOKEN_PATH);
     // return oAuth2Client;
   } catch (e) {
+    /// @Analytics event 9
+    /// @Description long long long long long long long 
+    /// long long long long 
+    /// long long long description 9
     console.error("Error while trying to retrieve access token: " + e);
     throw(e)
   }
 }
-
-exports.authorize = authorize;

@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "googleapis": "^68.0.0",
-    "js-yaml": "^4.0.0"
+    "js-yaml": "^4.0.0",
+    "readline-sync": "^1.4.10"
   },
   "scripts": {
     "doc-gen": "node -e 'require(\"./doc-gen.js\").docGen()'"
