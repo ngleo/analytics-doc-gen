@@ -37,7 +37,8 @@ async function authorize() {
     return await getNewToken(oAuth2Client);
   }
 }
-
+  /// @Analytics_event event 7
+  /// @Category category 7
 /**
  * Get and store new token after prompting for user authorization.
  * @param {google.auth.OAuth2} oAuth2Client The OAuth2 client to get token for.
