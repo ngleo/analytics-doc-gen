@@ -5,9 +5,9 @@ Add files below to configure:
 * config.yaml - example:
 ```yaml
 # Id of google sheet to populate data in
-spread sheet id: "xxxxx"
+spreadsheet id: "xxxxx"
 # Absolute path of root directory to parse
-root directory: "xxxxx"
+root path: "xxxxx"
 # Csv output path
 csv output path: "xxxxx"
 ```
