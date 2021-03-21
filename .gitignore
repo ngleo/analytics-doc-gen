@@ -1,6 +1,7 @@
 # Custom
 config/*
 !config/README.MD
+.DS_Store
 
 # Logs
 logs
