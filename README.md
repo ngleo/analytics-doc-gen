@@ -3,7 +3,7 @@
 Parse all files in a directory and document anayltics events in a Google Sheet.
 
 Annotate events using comments in below format. Include tags below, 
-@Analytics is required, others are optional.
+@Analytics is required, any other valid tags (in format "@Tag") are optional.
 ```java
 /// @Analytics_event [event name]
 /// @Category [category]

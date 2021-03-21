@@ -24,6 +24,7 @@ async function authorize() {
   }
   /// @Analytics_event event 7
   /// @Category category 7
+  /// @Platform Firebase
   ///
   /// Check
   const {client_secret, client_id, redirect_uris} = credentials.installed;
