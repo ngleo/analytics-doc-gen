@@ -10,15 +10,18 @@ Annotate events using comments in below format. Include tags below,
 /// @Description [description]
 ``` 
 
-To set up
+To setup 
+
+(run below and then add config files in /config)
 ```
 npm install
 ```
-To start
+
+To upload doc to Google sheet
 ```
 npm run doc-gen
 ```
-To export a csv
+To export doc as csv
 ```
 npm run doc-gen-csv
 ```
